@@ -18,7 +18,7 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat','Roboto', sans-serif;
   text-decoration: none;
   list-style: none;
 }
@@ -32,6 +32,7 @@ body {
 
 .card__item {
   cursor: pointer;
+  padding: 32px 24px;
   width: 265px;
   height: 275px;
   border-radius: 14px;
@@ -57,6 +58,37 @@ body {
 .card__item-white {
   background: #FFFFFF;
   color: #838383;
+}
+
+.card__item-level {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 32px;
+}
+
+.card__item-star {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  background: rgba(0, 0, 0, .1);
+  border-radius: 50%;
+}
+
+.card__item-star img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+}
+
+.card__item-requirements {
+  margin-top: 7px;
+  text-align: right;
+  font-weight: 500;
+  font-size: 21px;
+  letter-spacing: -0.01px;
 }
 
 //2dae77 green
