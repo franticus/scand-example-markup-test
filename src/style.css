@@ -32,7 +32,7 @@ body {
 
 .card__item {
   cursor: pointer;
-  padding: 32px 24px;
+  padding: 32px 24px 32px 20px;
   width: 265px;
   height: 275px;
   border-radius: 14px;
@@ -45,10 +45,10 @@ body {
   perspective: 1000px;
 }
 
-// .card__item:hover {
-//   cursor: pointer;
-//   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, .3);
-// }
+.card__item:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, .3);
+}
 
 .card__item-green {
   background: #40e298;
@@ -65,6 +65,7 @@ body {
   align-items: center;
   justify-content: space-between;
   font-size: 32px;
+  padding-left: 4px;
 }
 
 .card__item-star {
@@ -73,6 +74,10 @@ body {
   height: 58px;
   background: rgba(0, 0, 0, .1);
   border-radius: 50%;
+}
+
+.card__item-star-empty {
+  background: transparent;
 }
 
 .card__item-star img {
@@ -84,13 +89,69 @@ body {
 }
 
 .card__item-requirements {
-  margin-top: 7px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 6px;
   text-align: right;
-  font-weight: 500;
-  font-size: 21px;
-  letter-spacing: -0.01px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.25px;
 }
 
-//2dae77 green
-//838383 color dark
-//58a5ef star
+.card__item-confirm {
+  margin: 7px 0 20px 0;
+  height: 75px;
+}
+
+.card__item-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0.45px;
+}
+
+.card__item-line:not(:last-child) {
+  margin-bottom: 1.4px;
+}
+
+.card__item-line img {
+  margin-left: 10px;
+  width: 24px;
+}
+
+.card__item-circle {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 2px solid #838383;
+  margin-left: 14.2px;
+}
+
+.card__item-annual {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 6px;
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+}
+
+.card__item-white .card__item-confirm  {
+  margin: 11px 5px 16px 0;
+  letter-spacing: -0.25px;
+}
+
+.card__item-white .card__item-annual  {
+  margin: 0;
+  letter-spacing: -0.25px;
+}
+
+.card__item-white .card__item-line:not(:last-child) {
+  margin-bottom: 8px;
+}

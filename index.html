@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/style.css" />
     <title>Scand markup test</title>
   </head>
@@ -16,21 +18,49 @@
       <div class="card__item card__item-green">
         <div class="card__item-level">
           <div class="card__item-star">
-            <img src="./src/assets/star.svg"></img>
+            <img src="./src/assets/star.svg" />
           </div>
           <p>Level 1</p>
         </div>
-        <div class="card__item-requirements">
-          Requirements
+        <div class="card__item-requirements">Requirements</div>
+        <div class="card__item-confirm">
+          <div class="card__item-line">
+            Confirm E-mail <img src="./src/assets/check.svg" />
+          </div>
+          <div class="card__item-line">
+            Confirm Phone Number
+            <img src="./src/assets/check.svg" alt="check" />
+          </div>
+          <div class="card__item-line">
+            Enter personal details
+            <img src="./src/assets/check.svg" alt="check" />
+          </div>
         </div>
+        <div class="card__item-annual">Annual turnover - up to 2.500 EUR</div>
       </div>
     </div>
     <div class="card">
       <div class="card__item card__item-white">
-        <div>Level 2</div>
+        <div class="card__item-level">
+          <div class="card__item-star card__item-star-empty">
+            <img src="./src/assets/star-blue.svg" />
+          </div>
+          <p>Level 2</p>
+        </div>
+        <div class="card__item-requirements">Requirements</div>
+        <div class="card__item-confirm">
+          <div class="card__item-line">
+            Upload Photo ID
+            <div class="card__item-circle"></div>
+          </div>
+          <div class="card__item-line">
+            Upload Utility Bill
+            <div class="card__item-circle"></div>
+          </div>
+        </div>
+        <div class="card__item-annual">Annual turnover - up to 30.000 EUR</div>
       </div>
     </div>
-
     <script src="./src/script.js"></script>
   </body>
 </html>
