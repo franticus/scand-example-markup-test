@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  height: 100vh;
+  background: #ffffff;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.card {
+  margin: 15px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card__item {
+  cursor: pointer;
+  width: 265px;
+  height: 275px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, .1);
+  transition: all 0.2s;
+  animation: title 1s ease-in-out;
+  font-size: 40px;
+  background-size: 0.1em 0.1em, 0.1em 0.1em, 100% 100%;
+  perspective: 1000px;
+}
+
+// .card__item:hover {
+//   cursor: pointer;
+//   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, .3);
+// }
+
+.card__item-green {
+  background: #40e298;
+  color: #FFFFFF;
+}
+
+.card__item-white {
+  background: #FFFFFF;
+  color: #838383;
+}
+
+//2dae77 green
+//838383 color dark
+//58a5ef star
